@@ -1,7 +1,46 @@
 # Textual-Dataset-Oversampling-With-Paraphrase-Generation_RSBP
 
+# Latar Belakang Masalah
 
-Nilai yang tinggi menunjukkan keseimbangan antara kemampuan model untuk menemukan kelas minoritas (recall) dan meminimalkan kesalahan positif (precision).
+Pada zaman ketika data menjadi bahan baku industri, data memainkan peran yang sangat penting. Akan tetapi, terdapat permasalahan yang tidak bisa dihindari, yaitu data imbalance atau ketidakseimbangan data khususnya pada sebuah dataset textual. Ketidakseimbangan data terjadi ketika jumlah sebuah kelas akan lebih banyak daripada jumlah data yang lainnya, yang sering menyebabkan model bias terhadap kelas mayoritas, sehingga mengurangi akurasi pada kelas minoritas. Salah satu solusi untuk mengatasi masalah ini adalah oversampling. Terdapat banyak metode oversampling yang mencakup teknik seperti SMOTE, augmentasi data, dll. Dalam konteks dataset textual, paraphrase generation menjadi metode augmentasi yang cukup efektif dikarenakan mampu menciptakan variasi data tanpa kehilangan konteks asli. Penelitian ini berfokus pada penggunaan paraphrase generation untuk menangani data imbalance pada dataset tekstual, yang relevan dalam mengembangkan model machine learning yang lebih akurat. Tujuan utamanya adalah meningkatkan performa model klasifikasi teks melalui pendekatan ini, sehingga menghasilkan solusi yang lebih baik untuk tantangan data imbalance.
+
+# Solusi/Metode yang diusulkan/Keterbaruan
+
+Penggunaan paraphrase generation untuk oversampling dataset textual menjadi solusi yang kami gunakan dalam mengatasi data imbalance dengan menciptakan variasi kalimat baru pada kelas minoritas tanpa mengubah makna aslinya, sehingga meningkatkan kualitas dan keseimbangan data.
+
+# Penjelasan Konsep
+
+Pada penelitian ini, digunakan berbagai metode dan teknik yang dirancang untuk meningkatkan kualitas data dalam menangani imbalance data. Penjelasan berikut akan menguraikan definisi, manfaat, dan implementasi dari setiap komponen tersebut untuk memberikan pemahaman yang lebih mendalam tentang relevansinya dalam penelitian ini.
+
+## SMOTE (Synthetic Minority Oversampling Technique)
+
+SMOTE adalah metode oversampling yang bertujuan untuk menangani ketidakseimbangan data dalam klasifikasi dengan cara menghasilkan data sintetik untuk kelas minoritas. Metode ini bekerja dengan memilih sampel dari kelas minoritas, kemudian membuat data baru melalui interpolasi linier antara sampel tersebut dan tetangganya. SMOTE secara efektif meningkatkan sensitivitas model terhadap kelas minoritas tanpa sekadar menduplikasi data asli.
+
+**Manfaat:**
+- Meningkatkan performa model pada dataset yang tidak seimbang.
+- Meminimalkan bias terhadap kelas mayoritas.
+- Menghindari risiko overfitting yang sering terjadi dengan metode penggandaan data.
+
+## Paraphrase Generation
+
+Paraphrase generation adalah proses menghasilkan kalimat yang memiliki makna sama atau serupa tetapi menggunakan struktur atau kata-kata yang berbeda. Teknik ini sering digunakan untuk memperkaya dataset tekstual agar lebih variatif dan membantu model pembelajaran mesin menangani berbagai bentuk input teks.
+
+**Manfaat:**
+- Menambah jumlah data pelatihan tanpa kehilangan konteks asli.
+- Memperbaiki kemampuan generalisasi model pada data yang belum pernah dilihat sebelumnya.
+
+## Oversampling
+
+Oversampling adalah strategi untuk menangani dataset yang tidak seimbang dengan meningkatkan jumlah sampel pada kelas minoritas. Strategi ini mencakup teknik sederhana seperti duplikasi data hingga metode yang lebih kompleks seperti SMOTE.
+
+**Manfaat:**
+- Membantu model memahami pola pada kelas minoritas.
+- Meningkatkan nilai metrik evaluasi seperti F1 score pada data yang tidak seimbang.
+
+## ChatGPT
+
+ChatGPT adalah model bahasa besar berbasis transformer yang dapat menghasilkan teks, termasuk parafrase untuk dataset tekstual. Dalam konteks oversampling, ChatGPT dapat digunakan untuk membuat variasi kalimat yang alami dan relevan secara kontekstual, memperkaya data pelatihan secara efektif.
+
 
 # Model yang digunakan
 
