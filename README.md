@@ -63,6 +63,24 @@ Terdapat beberapa eksperimen yang kami gunakan untuk menguji metode yang kami us
 | SVM        | 0.95     | 0.71    | 0.69    | 0.86     | 0.78      | 0.85         |
 | NB         | 0.87     | 0.26    | 0.66    | 0.76     | 0.60      | 0.70         |
 
+## Data Comparison 
+
+### Accuracy 
+
+![](./src/acc_comp.png)
+
+### Negative
+
+![](./src/neg_comp.png)
+
+### Neutral
+
+![](./src/neu_comp.png)
+
+### Positive
+
+![](./src/pos_comp.png)
+
 # Kesimpulan
 
 Ketidakseimbangan data pada dataset textual sering menjadi kendala dalam pengembangan model machine learning, terutama karena model cenderung lebih akurat pada kelas mayoritas dan mengabaikan kelas minoritas. Dalam penelitian ini, kami mencoba mengatasi masalah tersebut dengan pendekatan paraphrase generation. Metode ini memungkinkan kita menciptakan variasi data baru untuk kelas minoritas tanpa mengubah makna aslinya. Dengan cara ini, dataset menjadi lebih seimbang dan relevan, memberikan kesempatan yang adil bagi semua kelas untuk dilatih oleh model secara optimal.
