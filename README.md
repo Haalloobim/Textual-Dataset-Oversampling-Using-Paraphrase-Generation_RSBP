@@ -1,4 +1,4 @@
-# Textual-Dataset-Oversampling-With-Paraphrase-Generation_RSBP
+# Textual-Dataset-Oversampling-Using-Paraphrase-Generation_RSBP
 
 # Latar Belakang Masalah
 
